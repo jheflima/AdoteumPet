@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adote um Amigo</title>
+    <link rel="icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>  
+    <div class="capa">
+        <a href="Capa"><img src="/imagens/logo.png" alt="Capa.Logo" width="200" height="200"> </a>
+    </div>       
+    <div class="navbar">
+      <a href="/index.html">Home</a>
+      <div class="dropdown">
+        <a class="dropbtn">Cadastros</a>
+        <div class="dropdown-content">
+          <a href="/cad_animal.html">Animais</a>
+          <a href="/cad_famílias.html">Famílias</a>
+          <a href="/manutencao.html">Parceiros</a>
+          <a href="/manutencao.html">Notícias</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <a class="dropbtn">Listar</a>
+        <div class="dropdown-content">
+          <a href="/lista_animais.html">Animais</a>
+          <a href="/manutencao.html">Famílias</a>
+          <a href="/manutencao.html">Parceiros</a>
+          <a href="/manutencao.html">Notícias</a>
+        </div>
+      </div> 
+      <div class="right">
+        <a href="/manutencao.html">Configurações</a>
+        <a href= "login.html">Sair</a>
+      </div>
+    </div>  
+    <h1>Formulário de Cadastro de Animais para adoção</h1>
+    <form class="form-animais">
+        <label for="numCadastro">Número do Cadastro:</label>
+        <input type="number" id="numCadastro" name="numCadastro" placeholder="00006"><br>
+          <label for="imagem">Upload de imagem:</label>
+          <input type="file" id="imagem" name="imagem" accept="image/*"><br>
+        <label for="nome">Espécie:</label>
+        <select id="Espécie"><br>
+              <option value="pequeno">Cachorro</option>
+              <option value="medio">Gato</option>
+        </select><br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="raca">Raça:</label>
+        <input type="text" id="raca" name="raca"><br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade"><br><br>
+        <label for="porte">Porte:</label>
+        <select id="porte">
+              <option value="pequeno">Pequeno</option>
+              <option value="medio">Médio</option>
+              <option value="grande">Grande</option>
+       </select><br>
+        <label for="peso">Peso: (em kg)</label>
+        <input type="number" id="peso" name="peso"><br><br>
+        <label for="doenca">Possui doença ou alergia? (Se sim. Qual?)</label><br>
+        <select id="doenca" name="doenca">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            <option value="naoInformado">Não Informado</option> 
+            <input type="text" id="qualDoença" name="qualDoença">
+          </select><br><br>
+        <label for="medicamento">Toma algum medicamento contínuo? (Se sim. Qual?)</label><br>
+        <select id="medicamento" name="medicamento">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            <option value="naoInformado">Não Informado</option>
+            <input type="text" id="qualMedicamento" name="qualMedicamento">
+        </select><br><br>
+        <label for="castrado">É castrado?</label>
+        <select id="castrado" name="castrado">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select><br>
+        <label for="outrosAnimais">Se dá bem com outros animais?</label>
+        <select id="outrosAnimais" name="outrosAnimais">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select><br>
+        <label for="pessoas">Se dá bem com outras pessoas?</label>
+        <select id="pessoas" name="pessoas">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select><br>
+        <label for="criancas">Se dá bem com crianças?</label>
+        <select id="criancas" name="criancas">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select><br><br>
+        <label for="endereco">Endereço temporário do animal:</label><br>
+        <textarea type="text" id="endereco" name="endereco" rows="4" cols="50"></textarea>
+      </form>
+        <a href="cad_sucesso.html"><button>Cadastrar</button>
+</body>
+</html>

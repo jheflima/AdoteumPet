@@ -1,0 +1,126 @@
+.navbar {
+    background-color: #f9a989;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+}
+.navbar a, .dropbtn {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #97f5f5;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9a989;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #97f5f5;
+    color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.right {
+    margin-left: auto;
+}
+.capa {
+    background-color: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h3 {
+    position:absolute;
+}
+
+.sucesso-container, .manutencao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-familias, .form-animais{
+    margin: 10px;
+    padding: 20px;
+    line-height: 1.6;
+    text-align: justify;
+
+    justify-content: center; /* Alinha itens horizontalmente ao centro */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+/* tela de login */
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.login-container img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100px;
+}
+.login-container input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.login-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007BFF;
+}
+
+/* Listas */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+.grid-item {
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.imgAnimal {
+    width: 15vw;
+    height: 15vw;
+}

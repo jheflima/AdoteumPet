@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adote um Amigo</title>
+    <link rel="icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>  
+    <div class="capa">
+        <a href="Capa"><img src="/imagens/logo.png" alt="Capa.Logo" width="200" height="200"> </a>
+    </div>       
+    <div class="navbar">
+      <a href="/index.html">Home</a>
+      <div class="dropdown">
+        <a class="dropbtn">Cadastros</a>
+        <div class="dropdown-content">
+          <a href="/cad_animal.html">Animais</a>
+          <a href="/cad_famílias.html">Famílias</a>
+          <a href="/manutencao.html">Parceiros</a>
+          <a href="/manutencao.html">Notícias</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <a class="dropbtn">Listar</a>
+        <div class="dropdown-content">
+          <a href="/lista_animais.html">Animais</a>
+          <a href="/manutencao.html">Famílias</a>
+          <a href="/manutencao.html">Parceiros</a>
+          <a href="/manutencao.html">Notícias</a>
+        </div>
+      </div> 
+      <div class="right">
+        <a href="/manutencao.html">Configurações</a>
+        <a href= "login.html">Sair</a>
+      </div>
+    </div>  
+    <h1>Formulário de Cadastro de Famílias para adotar</h1>
+    <form class="form-familias">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="dataNascimento"> Data de nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento"><br>        
+        <label for="profissao">Profissão:</label>
+        <input type="text" id="profissao" name="profissao"><br>
+        <label for="estadoCivil">Estado Civil:</label>
+        <select id="estadoCivil" name="estadoCivil">
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+        </select><br><br>
+
+        <label for="nomeConjuge">Nome do(a) Cônjuge:</label><input type="text" id="nomeConjuge" name="nomeConjuge"><br>
+        <label for="dataNascimentoConjuge">Data de nascimento:</label>
+        <input type="date" id="dataNascimentoConjuge" name="dataNascimentoConjuge"><br>
+
+        <label for="profissaoConjuge">Profissão do(a) Cônjuge:</label>
+        <input type="text" id="profissaoConjuge" name="profissaoConjuge"><br><br>
+        
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br>
+        <label for="comprovanteResidencia">Comprovante de residência:</label>
+        <input type="file" id="comprovanteResidencia" name="comprovanteResidencia" accept="image/*,application/pdf"><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="outrosAnimais">Tem outros animais? (Nome e espécie):</label><br>
+        <textarea id="outrosAnimais" name="outrosAnimais" rows="4" cols="50"></textarea><br>
+        <label for="criancas">A família possui crianças? (Nomes e data de nascimento)</label><br>
+        <textarea id="criancas" name="criancas" rows="4" cols="50"></textarea><br>
+        <label for="buscaPet">O que está buscando em um pet?</label><br>
+        <textarea id="buscaPet" name="buscaPet" rows="4" cols="50"></textarea>
+      </form>
+      <a href="cad_sucesso.html"><button>Cadastrar</button>
+</body>
+</html>
